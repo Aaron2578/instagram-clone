@@ -1,0 +1,122 @@
+{
+  "feed": [
+    {
+      "postId": "1",
+      "username": "sam_ui/ux",
+      "profilePic": "https://i.pravatar.cc/150?img=15",
+      "location": "Chennai, India",
+      "image": "https://images.unsplash.com/photo-1752679557481-5eb760fae573?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw4fHx8ZW58MHx8fHx8",
+      "caption": "Design is not just what it looks like, but how it works 🍃 #UIUX",
+      "likes": 120,
+      "comments": [
+        {
+          "username": "design_guru",
+          "comment": "Clean interface bro 👌"
+        },
+        {
+          "username": "frontend_aarav",
+          "comment": "Figma king 🔥"
+        }
+      ],
+      "postedAt": "2025-07-21T09:00:00Z",
+      "id": "2b38"
+    },
+    {
+      "postId": "2",
+      "username": "tech_coder",
+      "profilePic": "https://i.pravatar.cc/150?img=13",
+      "location": "Bangalore, India",
+      "image": "https://images.unsplash.com/photo-1753010837210-06dfb1ffc5d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzNHx8fGVufDB8fHx8fA%3D%3D",
+      "caption": "Late-night debugging... who’s with me? 😅 #CodeLife",
+      "likes": 200,
+      "comments": [
+        {
+          "username": "bugbuster",
+          "comment": "Relatable 😭😭"
+        }
+      ],
+      "postedAt": "2025-07-20T22:15:00Z",
+      "id": "729d"
+    },
+    {
+      "postId": "3",
+      "username": "dev_diya",
+      "profilePic": "https://i.pravatar.cc/150?img=47",
+      "location": "Mumbai, India",
+      "image": "https://images.unsplash.com/photo-1501973801540-537f08ccae7b",
+      "caption": "After code, peace 🌅 #Balance",
+      "likes": 310,
+      "comments": [],
+      "postedAt": "2025-07-19T18:30:00Z",
+      "id": "ab17"
+    }
+  ],
+  "profile": {
+    "postId": "100",
+    "username": "aaron_dev",
+    "name": "aaron",
+    "profilePic": "https://i.pravatar.cc/150?img=2",
+    "post": 0,
+    "following": 2,
+    "description": "Aaron 🎓Master of Science👨‍💻 Aspiring Front-End Developer📚 Learning New Technologies✨ Crafting User-Friendly Interfaces"
+  },
+  "suggestions": [
+    {
+      "postId": "1",
+      "username": "aaron_uiux",
+      "profilePic": "https://i.pravatar.cc/150?img=15",
+      "id": "b3b6"
+    },
+    {
+      "postId": "2",
+      "username": "tech_coder",
+      "profilePic": "https://i.pravatar.cc/150?img=13",
+      "id": "176c"
+    },
+    {
+      "postId": "3",
+      "username": "dev_diya",
+      "profilePic": "https://i.pravatar.cc/150?img=47",
+      "id": "fbd2"
+    },
+    {
+      "postId": "4",
+      "username": "devi",
+      "profilePic": "https://i.pravatar.cc/150?img=47",
+      "id": "f455"
+    },
+    {
+      "postId": "5",
+      "username": "sita",
+      "profilePic": "https://i.pravatar.cc/150?img=47",
+      "id": "e1bb"
+    }
+  ],
+  "story": [
+    {
+      "postId": 1,
+      "username": "sam_ui/ux",
+      "profilePic": "https://i.pravatar.cc/150?img=15",
+      "location": "Chennai, India",
+      "image": "https://images.pexels.com/photos/9407894/pexels-photo-9407894.jpeg?cs=srgb&dl=pexels-chriszwettler-9407894.jpg&fm=jpg",
+      "id": "e692"
+    },
+    {
+      "postId": 2,
+      "username": "tech_coder",
+      "profilePic": "https://i.pravatar.cc/150?img=13",
+      "location": "Bangalore, India",
+      "image": "https://i.pinimg.com/564x/96/ca/f0/96caf0020424fddbcd10a821de90c161.jpg",
+      "id": "6d71"
+    },
+    {
+      "postId": 3,
+      "username": "dev_diya",
+      "profilePic": "https://i.pravatar.cc/150?img=47",
+      "location": "Mumbai, India",
+      "image": "https://images.pexels.com/photos/18816020/pexels-photo-18816020/free-photo-of-rocky-mountain-peak-covered-with-coniferous-forest.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "id": "2b02"
+    }
+  ],
+  "followers": []
+}
