@@ -9,7 +9,7 @@ function Stories() {
     let tot = 0;
 
     useEffect(() => {
-        fetch('http://localhost:3000/story').
+        fetch('https://instagram-db.onrender.com/story').
             then((data) => data.json()).
             then(data => setStories(data)).
             catch(err => console.log(err))

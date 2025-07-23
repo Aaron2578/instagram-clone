@@ -10,7 +10,7 @@ function Followers() {
 
     useEffect(() => {
         setIsLoading(true)
-        axios.get('http://localhost:3000/followers')
+        axios.get('https://instagram-db.onrender.com/followers')
             .then(data => {
                 setFollowers(data.data);
                 setIsLoading(false)
@@ -23,7 +23,7 @@ function Followers() {
 
 
     const handleUnfollow = async (id) => {
-        axios.delete(`http://localhost:3000/followers/${id}`)
+        axios.delete(`https://instagram-db.onrender.com/followers/${id}`)
             .then(alert("Unfollowed"))
             .then(setUnfollowed(!unfollowed))
             .catch(err => console.log(err))

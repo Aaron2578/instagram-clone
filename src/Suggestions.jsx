@@ -10,19 +10,19 @@ function Suggestions() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    fetch('http://localhost:3000/profile')
+    fetch('https://instagram-db.onrender.com/profile')
       .then((data) => data.json())
       .then(data => setProfile(data))
       .catch(err => console.log(err))
 
-    fetch('http://localhost:3000/suggestions')
+    fetch('https://instagram-db.onrender.com/suggestions')
       .then((data) => data.json())
       .then(data => setSuggestions(data))
       .catch(err => console.log(err))
   }, [])
 
   const handleFollow = async (postId, username, profilePic) => {
-    axios.post('http://localhost:3000/followers', { postId, username, profilePic })
+    axios.post('https://instagram-db.onrender.com/followers', { postId, username, profilePic })
       .then(() => alert('Followed'))
       .catch(err => console.log(err))
   }

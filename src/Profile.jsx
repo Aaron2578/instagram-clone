@@ -13,7 +13,7 @@ function Profile() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        axios.get('http://localhost:3000/profile')
+        axios.get('https://instagram-db.onrender.com/profile')
             .then(data => {
                 setProfile(data.data)
             })
@@ -21,7 +21,7 @@ function Profile() {
 
 
 
-        axios.get('http://localhost:3000/followers')
+        axios.get('https://instagram-db.onrender.com/followers')
             .then(data => {
                 setFollowers(data.data)
             })
@@ -34,7 +34,7 @@ function Profile() {
     }
 
     const handleUpdate = async () => {
-        axios.put('http://localhost:3000/profile', profile)
+        axios.put('https://instagram-db.onrender.com/profile', profile)
             .then(console.log("updated"))
             .catch(err => console.log(err))
     }

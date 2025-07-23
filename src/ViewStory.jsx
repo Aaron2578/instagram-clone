@@ -9,7 +9,7 @@ function ViewStory() {
     const navigate = useNavigate()
 
     useEffect(() => {
-        fetch(`http://localhost:3000/story?postId=${postId}`)
+        fetch(`https://instagram-db.onrender.com/story?postId=${postId}`)
             .then(res => res.json())
             .then(data => {
                 if (data.length > 0) {
@@ -31,9 +31,9 @@ function ViewStory() {
             {!story && !error && <p>Loading...</p>}
             {story && (
                 <div className='d-flex justify-content-center align-items-center'>
-                    <Link to={`http://localhost:5173/story/${Number(postId) - 1}/${tot}`}><i className="bi bi-arrow-left-circle-fill"></i></Link>
+                    <Link to={`https://instagram-db.onrender.com/story/${Number(postId) - 1}/${tot}`}><i className="bi bi-arrow-left-circle-fill"></i></Link>
                     <img className='100vh mt-6' src={story.image} alt="story" width="400" />
-                    <Link to={`http://localhost:5173/story/${Number(postId) + 1}/${tot}`}><i className="bi bi-arrow-right-circle-fill"></i></Link>
+                    <Link to={`https://instagram-db.onrender.com/story/${Number(postId) + 1}/${tot}`}><i className="bi bi-arrow-right-circle-fill"></i></Link>
                 </div>
             )}
         </div>
