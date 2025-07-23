@@ -5,7 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ViewStory from './ViewStory.jsx'
 import Profile from './Profile.jsx'
-import Followers from './followers.jsx'
+import Followers from './Followers.jsx'
 
 const router = createBrowserRouter(
   [
