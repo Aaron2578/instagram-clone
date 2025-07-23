@@ -5,8 +5,13 @@ function ViewStory() {
     const { postId, tot } = useParams();
     const [story, setStory] = useState(null);
     const [error, setError] = useState(null);
+    const navigate = useNavigate();
 
-    const navigate = useNavigate()
+    useEffect(() => {
+        if (Number(postId) > Number(tot) || Number(postId) <= 0) {
+            navigate('/');
+        }
+    }, [postId, tot, navigate]);
 
     useEffect(() => {
         fetch(`https://instagram-db.onrender.com/story?postId=${postId}`)
@@ -21,19 +26,28 @@ function ViewStory() {
             .catch(() => setError("Failed to load story"));
     }, [postId]);
 
-    if (postId > tot || postId <= 0) {
-        navigate('/')
-    }
-
     return (
         <div>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             {!story && !error && <p>Loading...</p>}
             {story && (
-                <div className='d-flex justify-content-center align-items-center'>
-                    <Link to={`https://instagram-db.onrender.com/story/${Number(postId) - 1}/${tot}`}><i className="bi bi-arrow-left-circle-fill"></i></Link>
-                    <img className='100vh mt-6' src={story.image} alt="story" width="400" />
-                    <Link to={`https://instagram-db.onrender.com/story/${Number(postId) + 1}/${tot}`}><i className="bi bi-arrow-right-circle-fill"></i></Link>
+                <div className='d-flex justify-content-center align-items-center mt-5'>
+                    {Number(postId) > 1 && (
+                        <Link to={`/story/${Number(postId) - 1}/${tot}`}>
+                            <i className="bi bi-arrow-left-circle-fill fs-3 mx-2"></i>
+                        </Link>
+                    )}
+                    <img
+                        src={story.image}
+                        alt="story"
+                        style={{ height: '100vh' }}
+                        width="400"
+                    />
+                    {Number(postId) < Number(tot) && (
+                        <Link to={`/story/${Number(postId) + 1}/${tot}`}>
+                            <i className="bi bi-arrow-right-circle-fill fs-3 mx-2"></i>
+                        </Link>
+                    )}
                 </div>
             )}
         </div>
