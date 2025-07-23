@@ -1,5 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+
+import logoText from './assets/instagram-text.png';
 function Sidebar() {
 
     const navigate = useNavigate()
@@ -7,7 +9,7 @@ function Sidebar() {
     return (
         <div className='m-3 position-fixed'>
             <div className='d-flex flex-column gap-4'>
-                <img className="logo-text" src="src\assets\instagram-text.png" alt="instagram-text" />
+                <img className="logo-text" src={logoText} alt="instagram-text" />
                 <div onClick={() => { navigate('/') }}><i className="bi bi-house-door"></i>Home</div>
                 <div><i className="bi bi-search"></i>Search</div>
                 <div><i className="bi bi-compass"></i>Explore</div>
